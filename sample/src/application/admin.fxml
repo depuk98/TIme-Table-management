@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="666.0" style="-fx-background-color: #DF7DC5;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admincontroller">
+  <children>
+
+    <Button fx:id="logout" layoutX="552.0" layoutY="43.0" mnemonicParsing="false" onMouseClicked="#logout" prefWidth="69.0" text="Log out" />
+    <Label layoutX="257.0" layoutY="32.0" prefHeight="55.0" prefWidth="140.0" text="  Admin" textAlignment="CENTER">
+      <font>
+        <Font size="32.0" />
+      </font>
+    </Label>
+    <ImageView fitHeight="153.37628173828125" fitWidth="123.92803843842808" layoutX="437.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@picture.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="369.0" layoutY="384.0" prefWidth="69.0" text="login Id">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <TextField disable="true" layoutX="464.0" layoutY="385.0" prefHeight="21.0" prefWidth="176.0" />
+      <Pane layoutX="1.0" layoutY="97.0" prefHeight="364.0" prefWidth="279.0" style="-fx-background-color: #91E68B;">
+         <children>
+            <Label fx:id="avail" layoutX="60.0" layoutY="45.0" onMouseClicked="#avail" prefHeight="55.0" prefWidth="152.0" style="-fx-background-color: #8B94E6;" text="       Room Availibility" />
+            <Label fx:id="book" layoutX="61.0" layoutY="109.0" onMouseClicked="#book" prefHeight="55.0" prefWidth="152.0" style="-fx-background-color: #8B94E6;" text="             Book Room" />
+            <Label fx:id="process" layoutX="61.0" layoutY="178.0" onMouseClicked="#process" prefHeight="55.0" prefWidth="152.0" style="-fx-background-color: #8B94E6;" text="      View Room Request" />
+            <Label fx:id="cancel" layoutX="60.0" layoutY="243.0" onMouseClicked="#cancel" prefHeight="55.0" prefWidth="152.0" style="-fx-background-color: #8B94E6;" text="     Cancel Room Booking" />
+         </children>
+      </Pane>
+  </children>
+</AnchorPane>

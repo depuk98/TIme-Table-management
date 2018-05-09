@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="606.0" style="-fx-background-color: #DF7DC5;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.facultycontroller">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Button fx:id="logout" layoutX="501.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#logout" prefWidth="69.0" text="Log out" />
+    <Label layoutX="269.0" layoutY="35.0" prefHeight="36.0" prefWidth="111.00009999999747" text="    Faculty" textAlignment="CENTER">
+      <font>
+        <Font size="24.0" />
+      </font>
+    </Label>
+    <ImageView fitHeight="137.37628613251303" fitWidth="111.00003814697266" layoutX="393.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@picture.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="284.0" layoutY="357.0" prefHeight="24.0" prefWidth="69.0" text="login Id">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Label>
+    <TextField disable="true" layoutX="371.0" layoutY="358.0" prefHeight="21.0" prefWidth="155.0" />
+      <Pane layoutY="31.0" prefHeight="404.0" prefWidth="277.0" style="-fx-background-color: #91E68B;">
+         <children>
+            <Label fx:id="avail" layoutX="51.0" layoutY="83.0" onMouseClicked="#avail" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #8B94E6;" text="Room Availibility" />
+            <Label fx:id="book" layoutX="51.0" layoutY="181.0" onMouseClicked="#book" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #8B94E6;" text="Book Room" />
+            <Label fx:id="cancel" layoutX="51.0" layoutY="280.0" onMouseClicked="#cancel" prefHeight="73.0" prefWidth="175.0" style="-fx-background-color: #8B94E6;" text="Cancel Room" />
+         </children>
+      </Pane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bookcontrollorfac">
+   <children>
+      <Label layoutX="222.0" layoutY="22.0" prefHeight="54.0" prefWidth="164.0" text="Book Room ">
+         <font>
+            <Font name="Comic Sans MS" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="94.0" prefHeight="24.0" prefWidth="43.0" text="Room:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="134.0" text="Time:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="179.0" text="Date:(ddmmyy)">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="249.0" layoutY="93.0" prefHeight="25.0" prefWidth="179.0" />
+      <TextField fx:id="start" layoutX="249.0" layoutY="130.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="date" layoutX="249.0" layoutY="175.0" prefHeight="25.0" prefWidth="179.0" />
+      <Button layoutX="453.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#bookroom" text="Request" />
+      <Label layoutX="105.0" layoutY="221.0" text="WeekDay">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="day" layoutX="249.0" layoutY="217.0" prefHeight="25.0" prefWidth="179.0" />
+      <Label layoutX="130.0" layoutY="259.0" style="-fx-font-weight: BOLD;" text="Purpose:" />
+      <TextField fx:id="purpose" layoutX="249.0" layoutY="259.0" prefHeight="86.0" prefWidth="179.0" />
+      <TextField fx:id="end" layoutX="326.0" layoutY="130.0" prefHeight="25.0" prefWidth="59.0" />
+      <Label layoutX="315.0" layoutY="134.0" text="--" />
+   </children>
+</AnchorPane>
